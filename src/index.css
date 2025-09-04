@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2); /* Zoom In */
+  }
+  100% {
+    transform: scale(1); /* Zoom Out */
+  }
+}
+
+.animate-zoomInOut {
+  animation: zoomInOut 2s infinite ease-in-out;
+}
